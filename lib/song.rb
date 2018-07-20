@@ -41,9 +41,13 @@ class Song
     artist = filename.split(' - ')[0]
 
     song = self.new(name)
+<<<<<<< HEAD
     song.artist = Artist.find_or_create_by_name(artist)
     song.save
     song
+=======
+    song.artist = Artist.new(artist)
+>>>>>>> 7803c85d9f7715aea8e65c8a06ee435e976f63ec
 # >>>>>>> 3d6956dade336b1fc9bb1b6c6d27dd483124fe7e
   end
   
